@@ -49,6 +49,16 @@ namespace forces
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
             try
             {
                 // read force and angle from textboxes 
@@ -60,12 +70,18 @@ namespace forces
                 //Rewrites the answers into the lablel
                 label1.Text = "Fx = " + Fx;
                 label2.Text = "Fy = " + Fy;
+
+               
             }
             catch
             {
-            //shows a message if an error occurs
-            MessageBox.Show("Your numbers are wrong, check again");
+                //shows a message if an error occurs
+                MessageBox.Show("Your numbers are wrong, check again");
             }
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
